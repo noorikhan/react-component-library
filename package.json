@@ -1,5 +1,5 @@
 {
-  "name": "react-component-library",
+  "name": "noori-noori-react-component-library",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "del dist && SET NODE_ENV=development babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build-app": "react-scripts build",
+    "build": "del build && SET NODE_ENV=development babel src/lib --out-dir build --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,6 +44,10 @@
     "babel-cli": "^6.26.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "@babel/core": "7.22.5",
+    "@babel/eslint-parser": "7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@babel/preset-env": "7.22.5"
   }
 }
